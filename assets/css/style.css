@@ -1,0 +1,287 @@
+
+body{
+    background-color:#4aaaa5;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    border: 2px solid #cccccc;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left:0;
+}
+
+
+#bodyArea{
+    position: fixed;
+    background-color:#dddddd;
+    margin-top: 65px;
+    width: 100%;
+    left:0;
+    bottom: 10;
+    height: 505px;
+
+}
+
+#mainContent{
+    background-color:#ffffff;
+    position: fixed;
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 2px solid #cccccc;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 400px;
+    width: 960px;
+    padding: 10px;
+    overflow: auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+
+}
+
+footer{
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 37px;
+    border: 2px solid #cccccc;
+    background-color: #666666;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    padding:15px;
+}
+/* h2 font styling */
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color:#4aaaa5;
+}
+
+#profilePic{
+    height: 150px;
+    width: 150px;
+    float: left ;
+    padding: 15px;
+}
+
+#headingMyName{
+    background-color: #4aaaa5;
+    width: 13%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    margin-left: 150px;
+    color: white;
+    padding:10px;
+}
+
+#navLinks{
+    float: right;
+    margin-right: 150px;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Anchors on Nav bar removing the underline */
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+form{
+    padding: 10px;
+    /* margin-left: 20px; */
+
+}
+/* size of input field in forms */
+.formInput{
+    width: 95%;
+    height: 20px;
+    border-radius: 5px;
+}
+
+/* Height of message box in form */
+#message{
+    height: 80px;
+}
+
+/* Submit Button styling */
+#submitButton{
+    background-color: #4aaaa5;
+    height: 25px;
+    width: 70px;
+    color: white;
+}
+
+div.gallery {
+    margin: 5px;
+    /* border: 1px solid #ccc; */
+    float: left;
+    width: 180px;
+    /* height : 800px !important; */
+    position: relative;
+}
+
+
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 2px;
+    text-align: center;
+
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: #4aaaa5;
+    width: 98%;
+    margin-left: 20%;
+    color:white;
+}
+
+/* Media Queries  for 980px*/
+@media screen and (max-width: 640px){
+#headingMyName{
+    display: block;
+    width: 100%;
+    height: 150px;
+    /* position: fixed; */
+    top: 0;
+    margin-left: 0px;
+    color: white;
+    padding:10px;
+    text-align: center;
+    top: -20px;
+}
+#navLinks{
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    left:180px;
+    top: 20px;
+    color: white !important;
+}
+
+#mainContent{
+    background-color:#ffffff;
+    position: fixed;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid #cccccc;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 450px;
+    width: 360px;
+    padding: 10px;
+    overflow: auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+}
+
+/* Media Queries  for 980px*/
+@media screen and (max-width: 640px) {
+    #headingMyName{
+        display: block;
+        width: 100%;
+        height: 150px;
+        /* position: fixed; */
+        top: 0;
+        margin-left: 0px;
+        color: white;
+        padding:10px;
+        text-align: center;
+        top: -20px;
+    }
+    #navLinks{
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        left:180px;
+        top: 20px;
+        color: white !important;
+    }
+    
+    #mainContent{
+        background-color:#ffffff;
+        position: fixed;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 2px solid #cccccc;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        height: 450px;
+        width: 360px;
+        padding: 10px;
+        overflow: auto;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        font-size: 15px;
+    }
+.gallery{
+    height: 10;
+    width: 20px;
+    margin-left: 90px!important;
+}
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px){
+    #headingMyName{
+        display: block;
+        width: 20%;
+        height: 150px;
+        /* position: fixed; */
+        top: 0;
+        margin-left: 10px;
+        color: white;
+        padding:10px;
+        text-align: left;
+        top: -20px;
+    }
+    #navLinks{
+        /* display: block;
+        position: relative;
+        width: 100%; */
+        text-align: right;
+        margin-right: 180px;
+        /* left:180px;
+        top: 20px; */
+    }
+    
+    #mainContent{
+        background-color:#ffffff;
+        position: fixed;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 2px solid #cccccc;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        height: 450px;
+        width: 700px;
+        padding: 10px;
+        overflow: auto;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        font-size: 15px;
+    }
+.gallery{
+    height: 10;
+    width: 20px;
+    margin-left: 90px!important;
+}
+    }
